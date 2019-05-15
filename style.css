@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	position: relative;
+	-webkit-animation-name: test;
+	-webkit-animation-duration: 5s;
+	/*animation-name: test;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	border: 5px solid black;
+	animation-direction:reverse;
+	animation-iteration-count:3;
+	animation-timing-function: linear;*/
+	border: 5px solid black;
+	animation:test 5s 2s reverse 3 linear;
+}
+
+@keyframes test{
+	0%{background-color: gray; left:0px; top:0;}
+	25%{background-color: green; left:300px; top:0px;}
+	50%{background-color: red; left:300px; top:300px;}
+	75%{background-color: yellow; left:0px; top:300px;}
+	100%{background-color: aqua; left: :0px; top:0px;}
+
+}
